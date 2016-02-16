@@ -1,0 +1,4 @@
+<div layout="column" layout-padding >
+  <h4 class="md-title">Data Dump</h4>
+  <textarea readonly cols="100" rows="10" >{{$ctrl.persons | removeProperty:'id' | json:0}}</textarea>
+</div>

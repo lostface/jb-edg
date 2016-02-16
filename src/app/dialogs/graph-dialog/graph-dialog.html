@@ -1,0 +1,22 @@
+<md-dialog ng-cloak >
+  <div layout="column" layout-fill>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <span>Graph</span>
+      </div>
+    </md-toolbar>
+
+    <md-dialog-content layout-margin layout-padding>
+      <age-chart ages="$ctrl.ages"></age-chart>
+    </md-dialog-content>
+
+    <md-dialog-actions>
+      <md-button ng-click="$ctrl.hide()">
+        Close
+      </md-button>
+
+    </md-dialog-actions>
+
+  </div>
+
+</md-dialog>

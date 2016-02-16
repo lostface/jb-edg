@@ -1,0 +1,52 @@
+<md-dialog ng-cloak>
+  <div layout="column" layout-fill>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <span>Add New Person</span>
+      </div>
+    </md-toolbar>
+
+    <form name="form">
+      <md-dialog-content layout-margin layout-padding>
+        <md-input-container class="md-block" >
+          <input name="name" ng-model="$ctrl.person.name" type="text" placeholder="Name" required>
+          <div ng-messages="form.name.$error">
+            <div ng-message="required">This is required!</div>
+          </div>
+        </md-input-container>
+
+        <md-input-container class="md-block" >
+          <input ng-model="$ctrl.person.job" type="text" placeholder="Job Title">
+        </md-input-container>
+
+        <md-input-container class="md-block" >
+          <input ng-model="$ctrl.person.age" type="text" placeholder="Age" maxlength="3" >
+        </md-input-container>
+
+        <md-input-container class="md-block" >
+          <input ng-model="$ctrl.person.nick" type="text" placeholder="Nickname">
+        </md-input-container>
+
+        <md-input-container>
+          <md-checkbox ng-model="$ctrl.person.employee" aria-label="Is employee?" >
+            Employee
+          </md-checkbox>
+        </md-input-container>
+
+      </md-dialog-content>
+
+      <md-dialog-actions>
+        <md-button ng-click="$ctrl.cancel()">
+          Cancel
+        </md-button>
+        <md-button ng-disabled="form.$invalid" ng-click="$ctrl.answer($ctrl.person)">
+          Add
+        </md-button>
+
+      </md-dialog-actions>
+
+    </form>
+
+  </div>
+
+</md-dialog>

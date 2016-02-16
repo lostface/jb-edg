@@ -1,0 +1,37 @@
+{
+  "bitwise": true,
+  "curly": true,
+  "eqeqeq": false,
+  "forin": true,
+  "freeze": true,
+  "funcscope": true,
+  "futurehostile": true,
+  "globals": {},
+  "iterator": true,
+  "latedef": "nofunc",
+  "maxcomplexity": 7,
+  "maxdepth": 1,
+  "maxerr": 50,
+  "noarg": true,
+  "nocomma": false,
+  "nonbsp": true,
+  "nonew": true,
+  "notypeof": false,
+  "predef" : ["angular", "d3"],
+  "shadow": "inner",
+  "singleGroups": false,
+  "strict": "global",
+  "undef": true,
+  "unused": true,
+  "varstmt": false,
+
+  // relaxing
+  "eqnull": true,
+  "validthis": true,
+
+  // environments
+  "browser": true,
+  "devel": true,
+  "jquery": true,
+  "node": true
+}

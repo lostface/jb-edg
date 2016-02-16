@@ -1,0 +1,26 @@
+<div layout="column">
+  <table class="person-list">
+    <thead>
+      <tr>
+        <th>Name (Job Title)</th>
+        <th>Age</th>
+        <th>Nickname</th>
+        <th>Employee</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="person in $ctrl.persons | orderBy: 'name' track by person.id">
+        <td>{{person.name}} ({{person.job}})</td>
+        <td>{{person.age}}</td>
+        <td>{{person.nick}}</td>
+        <td>
+          <md-checkbox ng-model="person.employee" aria-label="Is employee?" ></md-checkbox>
+        </td>
+        <td>
+          <md-button ng-click="$ctrl.onDelete({ person: person })" >Delete</md-button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,8 @@
+<div layout="column">
+  <div layout="row" layout-padding>
+    <md-button class="md-raised" ng-click="$ctrl.showAddPersonDialog($event)" aria-label="Show Add Person Dialog" >Add</md-button>
+    <md-button class="md-raised" ng-click="$ctrl.showGraphDialog($event)" aria-label="Show Graph Dialog">Graph</md-button>
+  </div>
+  <person-list persons='$ctrl.persons' on-delete='$ctrl.deletePerson(person)'></person-list>
+  <json-dump persons='$ctrl.persons'></json-dump>
+</div>

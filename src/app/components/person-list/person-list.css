@@ -1,0 +1,37 @@
+.person-list {
+  display: table;
+  max-width: 100%;
+  width: 100%;
+  border-collapse: separate;
+  border-color: grey;
+  border-spacing: 0;
+  border-radius: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.person-list td, .person-list th {
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: left;
+}
+
+.person-list th {
+  padding-bottom: 16px;
+  padding-top: 16px;
+}
+
+.person-list th {
+  background-color: rgb(63,81,181);
+  color: white;
+}
+
+.person-list tr:nth-child(odd) td {
+  background-color: #E3ECF5;
+}
+
+.person-list tr:nth-child(even) td {
+  background-color: #D1DEEC;
+}
